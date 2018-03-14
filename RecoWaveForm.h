@@ -114,10 +114,10 @@ class RecoWaveForm {
   double pedRMS_;
   double tReco_;
   double aReco_;
-  vector<double> rv_;
-  vector<double> re_;
-  vector<double> tv_;
-  vector<double> av_;
+  std::vector<double> rv_;
+  std::vector<double> re_;
+  std::vector<double> tv_;
+  std::vector<double> av_;
 };
 
 

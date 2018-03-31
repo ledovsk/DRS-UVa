@@ -102,6 +102,7 @@ public :
 
    void SimpleCheck(int channelID);
    void CalibrateOneChannel(int channelID);
+   void CheckAllDRSChannels();
   
 };
 
@@ -195,7 +196,7 @@ void pulse::Init(TTree *tree)
    fChain->SetBranchAddress("x2", &x2, &b_x2);
    fChain->SetBranchAddress("y2", &y2, &b_y2);
    fChain->SetBranchAddress("chi2", &chi2, &b_chi2);
-   fChain->SetBranchAddress("nTracks", &ntracks, &b_ntracks);
+   fChain->SetBranchAddress("ntracks", &ntracks, &b_ntracks);
    Notify();
 }
 

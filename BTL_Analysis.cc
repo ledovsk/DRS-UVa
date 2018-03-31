@@ -36,11 +36,13 @@ int main( int argc, char** argv)
 
 
   // Check performance of one DRS channel. Few simple distributoins
-  myPulse->SimpleCheck(10);
-
+  //  myPulse->SimpleCheck(4);
 
   // Calibrate Ratios for one channel
-  //  myPulse->CalibrateOneChannel(10);
+  myPulse->CalibrateOneChannel(5);
   
+  // Simple check of all channels
+  //  myPulse->CheckAllDRSChannels();
+
   return 0;
 }

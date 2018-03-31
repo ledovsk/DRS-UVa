@@ -150,8 +150,8 @@ RecoWaveForm::RecoWaveForm(double *wf, double *t, ChannelDRS *ch)
   double sum0 = 0;
   double sum1 = 0;
   double sum2 = 0;
-  double tMin = tStart_ + std::max(0,imin_-200) * ch->timeStep();
-  double tMax = tStart_ + std::max(0,imin_-150) * ch->timeStep();
+  double tMin = tStart_ + std::max(10,imin_-200) * ch->timeStep();
+  double tMax = tStart_ + std::max(60,imin_-150) * ch->timeStep();
   for(int i=0; i<1024; i++){
     if(fabs(wf[i])>1e-9 && t[i]>tMin && t[i]<tMax){
       sum0 += 1.;

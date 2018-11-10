@@ -35,14 +35,7 @@ int main( int argc, char** argv)
   pulse* myPulse = new pulse( myTree );
 
 
-  // Check performance of one DRS channel. Few simple distributoins
-  //  myPulse->SimpleCheck(4);
-
-  // Calibrate Ratios for one channel
-  myPulse->CalibrateOneChannel(5);
-  
-  // Simple check of all channels
-  //  myPulse->CheckAllDRSChannels();
+  myPulse->CheckAllDRSChannels();
 
   return 0;
 }
